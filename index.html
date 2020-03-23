@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta name="description" content="All Instagram filter effects in CSS. Complete set of Instagram filters in pure CSS. Preview all Instagram filters.">
+  <title>sophia lin</title>
+  <link rel="canonical" href="https://picturepan2.github.io/instagram.css">
+  <!-- Spectre.css CSS -->
+  <link rel="stylesheet" href="assets/css/spectre.min.css">
+  <link rel="stylesheet" href="assets/css/demo.min.css">
+  <!-- Instagram.css CSS -->
+  <!-- <link rel="stylesheet" href="dist/instagram.min.css"> -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
+</head>
+
+<style>
+  .hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  background: -webkit-linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);
+  background: linear-gradient(45deg, #ff89e9 0%,#05abe0 100%);
+}
+
+.hovereffect .overlay {
+  /* width: 100%;
+  height: 100%; */
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  padding: 3em;
+  text-align: left;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  max-width: none;
+  width: calc(100% + 60px);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+  transition: opacity 0.35s, transform 0.45s;
+  -webkit-transform: translate3d(-40px,0,0);
+  transform: translate3d(-40px,0,0);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  position: relative;
+  font-size: 1px;
+  background-color: transparent;
+  padding: 10% 0 10px 0;
+  text-align: left;
+}
+
+.hovereffect .overlay:before {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  /* border: 1px solid #fff; */
+  font-size: 3px;
+  content: '';
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+  transition: opacity 0.35s, transform 0.45s;
+  -webkit-transform: translate3d(-20px,0,0);
+  transform: translate3d(-20px,0,0);
+}
+
+.hovereffect a, .hovereffect p {
+  color: #FFF;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+  transition: opacity 0.35s, transform 0.45s;
+  -webkit-transform: translate3d(-10px,0,0);
+  transform: translate3d(-10px,0,0);
+}
+
+.hovereffect:hover img {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.hovereffect:hover .overlay:before,
+.hovereffect:hover a, .hovereffect:hover p {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+ul {
+  list-style-type: none;
+ }
+
+ #toc {
+  position: fixed;
+  left: 20;
+  top: 20;
+  background-color:#FFF;
+}
+
+</style>
+<body>
+
+  <div class="columns" id="toc">
+    <ul>
+      <li><a href="index.html" class="btn btn-primary btn-lg">home</a></li>
+      <li>projects</li>
+      <li><a href="gallery.html" class="btn btn-primary btn-sm">♥ gallery</a></li>
+      <li><a href="studio.html" class="btn btn-primary btn-sm">♥ studio</a></li>
+    </ul>
+  </div>
+  <div class="section section-hero bg-white">
+    <div id="overview" class="grid-hero container grid-lg text-center">
+      <h1>sophia lin</h1>
+      <h2>i am sophia lin. i like to create new projects including my most recent collection of decorated eggs!</h2> 
+      <!-- <p>
+        i am sophia lin. i like to create new projects including my most recent collection of decorated eggs!
+      </p> -->
+    </div>
+  </div>
+
+  <div class="section">
+    <div id="overview" class="grid-hero container grid-lg">
+      <h1 class="text">about me</h1>
+      <img src="photos/intro.jpg" width="40%"></img>
+      <p>sophia lin is awesome</p> 
+    </div>
+  </div>
+
+
+
+</body>
+</html>
